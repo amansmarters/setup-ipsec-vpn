@@ -33,7 +33,10 @@ do
     esac
 done
 
-#YOUR_IPSEC_PSK=''
+if [ -z "$YOUR_IPSEC_PSK" ];then
+YOUR_IPSEC_PSK=''
+fi
+
 YOUR_USERNAME=''
 YOUR_PASSWORD=''
 
