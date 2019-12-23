@@ -23,8 +23,17 @@
 # - IPsec pre-shared key, VPN username and password
 # - All values MUST be placed inside 'single quotes'
 # - DO NOT use these special characters within values: \ " '
+while getopts ":k:" o
+do
+    case "${o}" in
+    k) YOUR_IPSEC_PSK=${OPTARG}
+    ;;
+    *) usage
+    ;;
+    esac
+done
 
-YOUR_IPSEC_PSK=''
+#YOUR_IPSEC_PSK=''
 YOUR_USERNAME=''
 YOUR_PASSWORD=''
 
