@@ -34,11 +34,13 @@ do
 done
 
 if [ -z "$YOUR_IPSEC_PSK" ];then
-YOUR_IPSEC_PSK=''
+YOUR_IPSEC_PSK='pskamanpreet8333'
+YOUR_USERNAME='vpnuser'
+YOUR_PASSWORD='vpnpass123'
 fi
 
-YOUR_USERNAME=''
-YOUR_PASSWORD=''
+YOUR_USERNAME='vpnuser'
+YOUR_PASSWORD='vpnpass123'
 
 # Important notes:   https://git.io/vpnnotes
 # Setup VPN clients: https://git.io/vpnclients
