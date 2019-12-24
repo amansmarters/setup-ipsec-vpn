@@ -97,21 +97,21 @@ Username: $VPN_USER
 
 EOF
 
-printf "Do you wish to continue? [y/N] "
-read -r response
-case $response in
-  [yY][eE][sS]|[yY])
-    echo
+#printf "Do you wish to continue? [y/N] "
+#read -r response
+#case $response in
+ # [yY][eE][sS]|[yY])
+   # echo
     echo "Deleting VPN user..."
-    echo
-    ;;
-  *)
-    echo
-    echo "Aborting. No changes were made."
-    echo
-    exit 1
-    ;;
-esac
+   # echo
+   # ;;
+ # *)
+   # echo
+   # echo "Aborting. No changes were made."
+   # echo
+   # exit 1
+   # ;;
+#esac
 
 # Backup config files
 conf_bk "/etc/ppp/chap-secrets"
